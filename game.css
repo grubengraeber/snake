@@ -1,0 +1,108 @@
+* {
+    background-color: black;
+}
+
+body {
+    background-color: black;
+}
+
+
+h1, h3, p, a, nav {
+    color: rgb(255, 255, 255);
+    padding: 0;
+    margin: 0;
+}
+
+.ui {
+    width: 500px;
+    height: 5em;
+    margin: -1em auto;
+    padding: 2em 2em;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+
+.healthbar {
+    border: 1px solid red;
+    height: 2em;
+    width: 80%;
+}
+
+.score {
+    color:rgb(255, 0, 0);
+    margin: auto;
+}
+
+
+.health {
+    background: red;
+    height: 100%;
+    width: 100%;
+}
+
+
+.time {
+    color: aqua;
+}
+
+
+.board-container {
+    margin: auto;
+    height: 500px;
+    width: 500px;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: row;
+    flex-flow: row wrap;
+    box-shadow: 1px 1px 1px 2px red;
+}
+
+
+
+.field {
+    margin: 0;
+    padding: 0;
+    font-size: 50%;
+    background-color: rgb(0, 0, 0);
+    /*background: rgb(230, 100, 100);*/
+    /*background: rgb(0, 0, 0);*/
+    height: 10px;
+    width: 10px;
+
+}
+
+
+.field.snake {
+    box-shadow: 1px 1px 1px 1px inset;
+    background-color: yellow;
+}
+
+.field.snake.head {
+    background-color: yellow;
+}
+
+.field.snake.tail {
+    background-color:yellow;
+}
+
+.field.item.grow {
+    background-color: rgb(0, 255, 21);
+    clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+}
+
+.field.item.shrink {
+    background-color: rgb(255, 0, 0);
+    clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+}
+.field.item.death {
+    background-color: red;
+    clip-path: polygon(20% 0%, 0% 20%, 30% 50%, 0% 80%, 20% 100%, 50% 70%, 80% 100%, 100% 80%, 70% 50%, 100% 20%, 80% 0%, 50% 30%);
+}
+.field.item.score {
+    background-color: yellow;
+    clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+}
+.field.item.lower-health {
+    background-color: orangered;
+}
